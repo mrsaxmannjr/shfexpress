@@ -1,0 +1,68 @@
+module.exports = [
+  {
+    id: 1,
+    line: "dragonball",
+    name: "Son Goku (A Saiyan Raised on Earth)",
+    price: 34.99,
+    mainImage: "https://images-na.ssl-images-amazon.com/images/I/71YRJ1CizSL._SY679_.jpg",
+    description: [
+      "This is one action figure Dragon Ball fans will not want to miss! Son Goku, one of the world's post popular characters, joins the S.H.Figurarts line, perfectly replicated down to the Chinese characters on his clothing.",
+      "Incorporates cutting-edge action figure technology to let you replicate Son Goku's trademark battle poses.",
+      "Combine it with Frieza (sold separately) to re-create dramatic fight scenes, letting the world of Dragon Ball unfold right on your tabletop.",
+      "Includes 2 left and 4 right optional hands, plus 3 optional expression parts.",
+    ],
+    images: [
+      "https://images-na.ssl-images-amazon.com/images/I/41vRXO2YWFL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/51rBZF7uFwL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/41N8Ftbj4TL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/41i8hAxv4uL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/51wBTs3bTnL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/51id1Aj3fxL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/51R-u-X9BZL.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/415DWFHPk7L.jpg",
+    ],
+  },
+  {
+    id: 2,
+    line: "starwars",
+    name: "Darth Vader",
+    price: 62.46,
+    mainImage: "https://images-na.ssl-images-amazon.com/images/I/61fX8gCH0eL._SL1500_.jpg",
+    description: [
+      "Bandai Tamashii Nations S.H.Figuarts Star Wars Darth Vader",
+      "155mm PVC & Abs-painted Action Figure",
+      "Includes Darth Vader Figure, Lightsaber w/blade & Lightsaber hilt",
+      "Includes multiple accessories (hands) for different character looks",
+    ],
+    images: [
+      "https://images-na.ssl-images-amazon.com/images/I/711BuNVPPIL._SL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71rW%2Bfj3npL._SL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71d3f93S8xL._SL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71izL66hE3L._SL1500_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/616ryprVm6L._SL1500_.jpg",
+    ],
+  },
+  {
+    id: 3,
+    line: "marvel",
+    name: "Captain America: Civil War - Iron Man Mark 46 ",
+    price: 64.99,
+    mainImage: "https://images-na.ssl-images-amazon.com/images/I/61ZSyxGQa3L._SL1161_.jpg",
+    description: [
+      "Effects that can reproduce the attack-flight also various accessories.",
+      "Replacement wrist left and right each three",
+      "Palm for the effect each of the left and right two",
+      "Leg for effect left and right",
+      "Height: about 155mm",
+    ],
+    images: [
+      "https://images-na.ssl-images-amazon.com/images/I/71f3BW4nUtL._SL1376_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/713UYlSu7mL._SL1376_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71QjmN8d7OL._SL1376_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/61Mx81yCWVL._SL1376_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/61OV1c6BmsL._SL1376_.jpg",
+      "https://images-na.ssl-images-amazon.com/images/I/71m4wlZ7zuL._SL1376_.jpg",
+    ],
+  },
+];
+

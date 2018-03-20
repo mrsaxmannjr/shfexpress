@@ -4,8 +4,9 @@ exports.up = function (knex, Promise) {
     table.text("line").notNullable();
     table.text("name").notNullable();
     table.float("price").notNullable();
-    table.specificType("description", "text[]").notNullable();
+    table.text("mainImage").notNullable();
     table.specificType("images", "text[]").notNullable();
+    table.specificType("description", "text[]").notNullable();
   });
 };
 
