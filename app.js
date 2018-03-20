@@ -6,6 +6,8 @@ const cors = require("cors");
 
 const app = express();
 
+const figures = require("./api/figures");
+
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,6 +19,8 @@ app.get("/", (req, res) => {
     message: "Yo",
   });
 });
+
+app.use("/api/v1/figures", figures);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
