@@ -7,6 +7,9 @@ const cors = require("cors");
 const app = express();
 
 const figures = require("./api/figures");
+const dragonBall = require("./api/dragonBall");
+const starWars = require("./api/starWars");
+const marvel = require("./api/marvel");
 
 app.use(logger("dev"));
 app.use(bodyParser.json());
@@ -21,6 +24,9 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/v1/figures", figures);
+app.use("/api/v1/dragonBall", dragonBall);
+app.use("/api/v1/starWars", starWars);
+app.use("/api/v1/marvel", marvel);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
