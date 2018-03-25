@@ -11,6 +11,7 @@ const dragonBall = require("./api/dragonBall");
 const starWars = require("./api/starWars");
 const marvel = require("./api/marvel");
 const collection = require("./api/collection");
+const wishlist = require("./api/wishlist");
 
 app.use(logger("dev"));
 app.use(bodyParser.json());
@@ -20,7 +21,7 @@ app.use(cors());
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Yo",
+    message: "Yo, it works bro!",
   });
 });
 
@@ -29,6 +30,7 @@ app.use("/api/v1/dragonBall", dragonBall);
 app.use("/api/v1/starWars", starWars);
 app.use("/api/v1/marvel", marvel);
 app.use("/api/v1/collection", collection);
+app.use("/api/v1/wishlist", wishlist);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");

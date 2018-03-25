@@ -7,12 +7,21 @@ module.exports = {
   list() {
     return db("collection").select();
   },
+  listWishList() {
+    return db("wishlist").select();
+  },
   // read(id) {
   //   return db("collection").select().where("id", id).first();
   // },
   create(collection) {
     return db("collection")
       .insert(collection)
+      .returning("*")
+      .then(record => record[0]);
+  },
+  createWishList(wishlist) {
+    return db("wishlist")
+      .insert(wishlist)
       .returning("*")
       .then(record => record[0]);
   },
