@@ -4,7 +4,7 @@ exports.up = function (knex, Promise) {
     table.text("ASIN").notNullable();
     table.text("title").notNullable();
     table.text("image").notNullable();
-    table.specificType("feature", "text[]").notNullable();
+    table.text("feature").notNullable();
   });
 };
 
