@@ -10,6 +10,7 @@ const figures = require("./api/figures");
 const dragonBall = require("./api/dragonBall");
 const starWars = require("./api/starWars");
 const marvel = require("./api/marvel");
+const collection = require("./api/collection");
 
 app.use(logger("dev"));
 app.use(bodyParser.json());
@@ -27,6 +28,7 @@ app.use("/api/v1/figures", figures);
 app.use("/api/v1/dragonBall", dragonBall);
 app.use("/api/v1/starWars", starWars);
 app.use("/api/v1/marvel", marvel);
+app.use("/api/v1/collection", collection);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
