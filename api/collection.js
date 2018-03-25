@@ -4,11 +4,11 @@ const router = express.Router();
 
 const queries = require("../db/queries.js");
 
-// router.get("/", (request, response, next) => {
-//   queries.list().then(collection => {
-//     response.json({ collection });
-//   }).catch(next);
-// });
+router.get("/", (request, response, next) => {
+  queries.list().then(collection => {
+    response.json({ collection });
+  }).catch(next);
+});
 
 // router.get("/:id", (request, response, next) => {
 //   queries.read(request.params.id).then(collection => {

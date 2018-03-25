@@ -4,9 +4,9 @@ module.exports = {
   getAll() {
     return db("figures");
   },
-  // list() {
-  //   return db("collection").select();
-  // },
+  list() {
+    return db("collection").select();
+  },
   // read(id) {
   //   return db("collection").select().where("id", id).first();
   // },
