@@ -10,6 +10,9 @@ module.exports = {
   listWishList() {
     return db("wishlist").select();
   },
+  listAchievements() {
+    return db("achievements").select();
+  },
   // read(id) {
   //   return db("collection").select().where("id", id).first();
   // },

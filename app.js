@@ -12,6 +12,7 @@ const starWars = require("./api/starWars");
 const marvel = require("./api/marvel");
 const collection = require("./api/collection");
 const wishlist = require("./api/wishlist");
+const achievements = require("./api/achievements");
 
 app.use(logger("dev"));
 app.use(bodyParser.json());
@@ -31,6 +32,7 @@ app.use("/api/v1/starWars", starWars);
 app.use("/api/v1/marvel", marvel);
 app.use("/api/v1/collection", collection);
 app.use("/api/v1/wishlist", wishlist);
+app.use("/api/v1/achievements", achievements);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
